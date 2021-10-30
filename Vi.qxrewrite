@@ -1,62 +1,22 @@
-{\rtf1\ansi\ansicpg936\cocoartf2580
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fnil\fcharset134 PingFangSC-Regular;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+hostname = vip1.kuwo.cn,biliapi.*.com,api.cqmingmohui.com,pi.meirigengxin.com,api.zgjizhi.com,
+api.zdhndz.net,api.qihaofs.com,api.gngbidding.com,api.jxtgsy.com,p.du.163.com
 
-\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
-hostname = 
-\fs24 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 vip1.kuwo.cn
-\f1 ,biliapi.*.com,api.cqmingmohui.com,pi.meirigengxin.com,api.zgjizhi.com,\
-api.zdhndz.net,api.qihaofs.com,api.gngbidding.com,api.jxtgsy.com,
-\f0 \cf0 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 p.du.163.com\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \
-\
-\pard\pardeftab720\partightenfactor0
-\cf2 #
-\f1 \'bf\'e1\'ce\'d2\'d2\'f4\'c0\'d6
-\f0 \
-^https?:\\/\\/vip1\\.kuwo\\.cn\\/(vip\\/v2\\/user\\/vip|vip\\/spi/mservice) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js\
-\
-#
-\f1 \'b1\'c6\'c1\'a8\'b1\'c6\'c1\'a8
-\f0 (
-\f1 \'b2\'e2\'ca\'d4\'d6\'d0
-\f0 ,
-\f1 \'b8\'e3\'b2\'bb\'b6\'a8
-\f0 )\
-#
-\f1 \'cf\'c2\'d4\'d8\'b5\'d8\'d6\'b7
-\f0 \
-#http://blchl02.com/?pc=VCLVUW86\
-#
-\f1 \'df\'d9\'c1\'a8\'df\'d9\'c1\'a8\'bd\'e2\'cb\'f8\'bb\'e1\'d4\'b1
-\f0 \
-^https:\\/\\/biliapi\\..+\\.com\\/api\\/app\\/user\\/info url script-response-body https://xmkczs.com/quantumultX/blbl.js\
-#^https:\\/\\/biliapi\\..+\\.com\\/api\\/app\\/.+ url script-request-header https://xmkczs.com/quantumultX/blbls.js\
-#
-\f1 \'ce\'cf\'c5\'a3\'b6\'c1\'ca\'e9
-\f0 \
-\pard\pardeftab720\partightenfactor0
+#酷我音乐
+^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js
 
-\fs20\fsmilli10010 \cf0 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 ^https?:\\/\\/p\\.du\\.163\\.com\\/gain\\/readtime\\/info\\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js\
-\pard\pardeftab720\partightenfactor0
+#逼哩逼哩(测试中,搞不定)
+#下载地址
+#http://blchl02.com/?pc=VCLVUW86
+#哔哩哔哩解锁会员
+^https:\/\/biliapi\..+\.com\/api\/app\/user\/info url script-response-body https://xmkczs.com/quantumultX/blbl.js
+#^https:\/\/biliapi\..+\.com\/api\/app\/.+ url script-request-header https://xmkczs.com/quantumultX/blbls.js
+#蜗牛读书
+^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js
 
-\fs24 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \
-#
-\f1 \'c5\'be\'c1\'a8\'c5\'be\'c1\'a8\'bd\'e2\'cb\'f8\'bb\'e1\'d4\'b1
-\f0 \
-#
-\f1 \'cf\'c2\'d4\'d8\'b5\'d8\'d6\'b7
-\f0 \
-#https://dl.gzbn707.com?code=LGURXK&channelCode=share\
-^https:\\/\\/api\\.(cqmingmohui|meirigengxin|zgjizhi|zdhndz|qihaofs|gngbidding|jxtgsy)\\.(com|net)\\/v1\\/user\\/(info|promote/info) url script-response-body https://xmkczs.com/quantumultX/plpl.js\
-^(https:\\/\\/.+?\\/v1\\/video\\/info.+?)token=.+?video_type=\\w+ url 302 $1token=eyJ1c2VyX2lkIjo0NDM2MDM1NDgsImxhc3Rsb2dpbiI6MTYyNTAyOTU4OH0.7ca19b7fb81c7d4dd677b2710829b4fd.117c078f8dddfb3b7cf5fff3df7943b441e9842f20202e91ab9500d5&video_type=long\
-\
-^(https:\\/\\/.+?\\/media\\/download\\/.+?)token=.+ url 302 $1token=eyJ1c2VyX2lkIjo0NDM2MDM1NDgsImxhc3Rsb2dpbiI6MTYyNTAyOTU4OH0.7ca19b7fb81c7d4dd677b2710829b4fd.117c078f8dddfb3b7cf5fff3df7943b441e9842f20202e91ab9500d5}
+#啪哩啪哩解锁会员
+#下载地址
+#https://dl.gzbn707.com?code=LGURXK&channelCode=share
+^https:\/\/api\.(cqmingmohui|meirigengxin|zgjizhi|zdhndz|qihaofs|gngbidding|jxtgsy)\.(com|net)\/v1\/user\/(info|promote/info) url script-response-body https://xmkczs.com/quantumultX/plpl.js
+^(https:\/\/.+?\/v1\/video\/info.+?)token=.+?video_type=\w+ url 302 $1token=eyJ1c2VyX2lkIjo0NDM2MDM1NDgsImxhc3Rsb2dpbiI6MTYyNTAyOTU4OH0.7ca19b7fb81c7d4dd677b2710829b4fd.117c078f8dddfb3b7cf5fff3df7943b441e9842f20202e91ab9500d5&video_type=long
+
+^(https:\/\/.+?\/media\/download\/.+?)token=.+ url 302 $1token=eyJ1c2VyX2lkIjo0NDM2MDM1NDgsImxhc3Rsb2dpbiI6MTYyNTAyOTU4OH0.7ca19b7fb81c7d4dd677b2710829b4fd.117c078f8dddfb3b7cf5fff3df7943b441e9842f20202e91ab9500d5
